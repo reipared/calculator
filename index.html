@@ -7,124 +7,171 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title -->
-		<title>Document</title>
+		<title>Calculator</title>
 
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="styles/styles.css" />
 	</head>
 	<body>
-		<div id="calculator">
+		<div class="calculator">
 			<input
 				type="text"
-				id="display"
+				class="output"
+				id="result"
 				readonly
-				aria-label="display calculator"
-			/><br />
-			<input
-				type="button"
-				value="7"
-				aria-label="button"
-				onclick="addToDisplay('7')"
+				aria-label="calculator"
 			/>
-			<input
-				type="button"
-				value="8"
-				aria-label="button"
-				onclick="addToDisplay('8')"
-			/>
-			<input
-				type="button"
-				value="9"
-				aria-label="button"
-				onclick="addToDisplay('9')"
-			/>
-			<input
-				type="button"
-				value="/"
-				aria-label="button"
-				onclick="addToDisplay('/')"
-			/>
-			<input
-				type="button"
-				value="4"
-				aria-label="button"
-				onclick="addToDisplay('4')"
-			/>
-			<input
-				type="button"
-				value="5"
-				aria-label="button"
-				onclick="addToDisplay('5')"
-			/>
-			<input
-				type="button"
-				value="6"
-				aria-label="button"
-				onclick="addToDisplay('6')"
-			/>
-			<input
-				type="button"
-				value="*"
-				aria-label="button"
-				onclick="addToDisplay('*')"
-			/>
-			<input
-				type="button"
-				value="1"
-				aria-label="button"
-				onclick="addToDisplay('1')"
-			/>
-			<input
-				type="button"
-				value="2"
-				aria-label="button"
-				onclick="addToDisplay('2')"
-			/>
-			<input
-				type="button"
-				value="3"
-				aria-label="button"
-				onclick="addToDisplay('3')"
-			/>
-			<input
-				type="button"
-				value="-"
-				aria-label="button"
-				onclick="addToDisplay('-')"
-			/>
-			<input
-				type="button"
-				value="0"
-				aria-label="button"
-				onclick="addToDisplay('0')"
-			/>
-			<input
-				type="button"
-				value="."
-				aria-label="button"
-				onclick="addToDisplay('.')"
-			/>
-			<input
-				type="button"
-				value="="
-				aria-label="button"
-				onclick="calculate()"
-			/>
-			<input
-				type="button"
-				value="+"
-				aria-label="button"
-				onclick="addToDisplay('+')"
-			/>
-			<input
-				type="button"
-				value="C"
-				aria-label="button"
-				onclick="clearDisplay()"
-			/>
+			<table>
+				<tr>
+					<td>
+						<input
+							type="button"
+							value="7"
+							onclick="addToDisplay('7')"
+							aria-label="number 7"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="8"
+							onclick="addToDisplay('8')"
+							aria-label="number 8"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="9"
+							onclick="addToDisplay('9')"
+							aria-label="number 9"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="/"
+							onclick="addToDisplay('/')"
+							aria-label="division operator"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input
+							type="button"
+							value="4"
+							onclick="addToDisplay('4')"
+							aria-label="number 4"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="5"
+							onclick="addToDisplay('5')"
+							aria-label="number 5"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="6"
+							onclick="addToDisplay('6')"
+							aria-label="number 6"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="*"
+							onclick="addToDisplay('*')"
+							aria-label="multiply operator"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input
+							type="button"
+							value="1"
+							onclick="addToDisplay('1')"
+							aria-label="number 1"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="2"
+							onclick="addToDisplay('2')"
+							aria-label="number 2"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="3"
+							onclick="addToDisplay('3')"
+							aria-label="number 3"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="-"
+							onclick="addToDisplay('-')"
+							aria-label="minus operator"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input
+							type="button"
+							value="0"
+							onclick="addToDisplay('0')"
+							aria-label="number 0"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="."
+							onclick="addToDisplay('.')"
+							aria-label="dot"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="="
+							onclick="calculate()"
+							aria-label="equals"
+						/>
+					</td>
+					<td>
+						<input
+							type="button"
+							value="+"
+							onclick="addToDisplay('+')"
+							aria-label="sum operator"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input
+							type="button"
+							value="C"
+							onclick="clearDisplay()"
+							aria-label="clear"
+						/>
+					</td>
+				</tr>
+			</table>
 		</div>
 
-		<!-- JavaScript script-->
+		<!-- JavaScript -->
 		<script src="script.js"></script>
 	</body>
 </html>
